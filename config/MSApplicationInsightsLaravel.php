@@ -15,6 +15,6 @@ return [
      * Alternatively, replace the env call below with a string containing your key.
      */
 
-    'instrumentationKey' => env('MS_INSTRUMENTATION_KEY', null),
+    'instrumentationKey' => env('AZURE_LOGGING_KEY', null),
 
 ];
