@@ -17,16 +17,30 @@
         }
     ],
     "require": {
-        "php": ">=5.4.2",
-        "guzzlehttp/guzzle": "^6.3",
-        "illuminate/config": "~5.7||^6.0",
-        "illuminate/support": "~5.7||^6.0",
-        "laravel/framework": "~5.7||^6.0",
-        "microsoft/application-insights": "^0.4.4"
+        "php": ">=7.4.2",
+        "guzzlehttp/guzzle": "6.5.x-dev",
+        "illuminate/config": "^8.0",
+        "illuminate/support": "^8.0",
+        "laravel/framework": "^8.0",
+        "microsoft/application-insights": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "Marchie\\MSApplicationInsightsLaravel\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/blitzen12/ApplicationInsights-PHP.git"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "github-oauth": {
+          "github.com": "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"
         }
     },
     "extra": {
